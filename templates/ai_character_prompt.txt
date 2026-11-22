@@ -1,0 +1,8 @@
+================ 中文版 (发给任意 AI 提取角色外貌词) ================
+
+请帮我提取动漫/游戏角色【在此填入角色名与作品名】的精准纯英文视觉外貌特征标签（包含发色、发型、瞳色、原生肤色、标志性发饰/配饰/服设），单行英文逗号分隔输出，不要画质词和废话，例如：1girl, solo, long silver hair, crimson eyes, pale skin, ...
+
+
+================ English Version (For Overseas Users) ================
+
+Please extract accurate English visual appearance tags for the anime/game character [Insert Character Name & Series Here], including hair color, hairstyle, eye color, natural skin tone, and iconic accessories/outfit. Output as a single comma-separated line with no quality filler or extra explanations. Example: 1girl, solo, long silver hair, crimson eyes, pale skin, ...

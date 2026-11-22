@@ -1,0 +1,40 @@
+================ 中文版 (发给任意 AI 即可生成词库) ================
+
+请为我生成一个适用于 hsMuse 提示词工作台的扩展知识库 JSON 文件，主题为：【在此填写主题，例如：日系校园纯欲 / 奇幻冒险 / 古代宫廷】。
+严格按照以下 JSON 字段格式输出纯英文视觉描述词条（era 字段请从 modern / xianxia / wabi_fantasy / nature_water 中四选一；每类 10~15 条高信息密度动态描写短语，严禁出现 8k/masterpiece/camera 或任何画师名字，纯 JSON 代码块输出）：
+{
+  "kb_name": "08_自定义主题库",
+  "era": "modern",
+  "description": "主题简介",
+  "outfits": ["常规服装搭配1", "常规服装搭配2"],
+  "actions": ["单人常规动作与微动态1", "单人常规动作与微动态2"],
+  "expressions": ["眼神与微表情1", "眼神与微表情2"],
+  "nsfw_outfits": ["擦边或裸露服装1", "擦边或裸露服装2"],
+  "nsfw_actions": ["单人成人向动作姿势1", "单人成人向动作姿势2"],
+  "dual_sfw_actions": ["双人常规互动姿势1"],
+  "dual_nsfw_actions": ["双人亲密互动姿势1"],
+  "scenes": ["场景环境描述1", "场景环境描述2"],
+  "lighting": ["光影与氛围描述1", "光影与氛围描述2"]
+}
+
+
+================ English Version (For Overseas Users) ================
+
+Please generate an extension knowledge base JSON file for hsMuse Visual Prompt Studio.
+Theme: [Fill in your theme here, e.g., Cyberpunk Streetwear / Medieval Fantasy / Cozy Cafe].
+
+Strictly output a pure JSON code block following the schema below (choose "era" from: modern / xianxia / wabi_fantasy / nature_water; provide 10–15 high-density, vivid English visual phrases per array; do NOT include quality filler like 8k/masterpiece/camera or any artist names):
+{
+  "kb_name": "Custom_Theme_Pack",
+  "era": "modern",
+  "description": "Short theme description",
+  "outfits": ["SFW outfit combination 1", "SFW outfit combination 2"],
+  "actions": ["Solo SFW pose or motion 1", "Solo SFW pose or motion 2"],
+  "expressions": ["Facial expression or gaze 1", "Facial expression or gaze 2"],
+  "nsfw_outfits": ["Sensual or NSFW outfit 1", "Sensual or NSFW outfit 2"],
+  "nsfw_actions": ["Solo NSFW pose 1", "Solo NSFW pose 2"],
+  "dual_sfw_actions": ["Two-character SFW interaction 1"],
+  "dual_nsfw_actions": ["Two-character intimate interaction 1"],
+  "scenes": ["Environment or background 1", "Environment or background 2"],
+  "lighting": ["Lighting and atmosphere 1", "Lighting and atmosphere 2"]
+}

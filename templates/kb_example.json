@@ -1,0 +1,107 @@
+{
+  "kb_name": "霜色物哀",
+  "_sort_order": 20,
+  "era": "wabi_fantasy",
+  "description": "强调大面积极简负空间、冷冽切光、物哀孤寂感与单点破局色",
+  "outfits": [
+    "tattered dark asymmetrical overcoat fluttering in freezing wind, exposed collarbone",
+    "minimalist chalk-white sleeveless silk tunic with frayed hem, wind-whipped sash",
+    "dark high-collared ceremonial uniform partially unfastened at throat, trailing cape",
+    "sheer misty charcoal silk slip clinging softly in damp cool air, bare shoulders",
+    "weathered indigo linen haori draped loosely over pale inner kimono, flowing sleeves",
+    "ash-grey raw hemp robe wrapped in layered folds, faded crimson cord tied at waist",
+    "slender obsidian wool mantle with silver clasp over pale silver-white linen under-tunic",
+    "frayed ivory gauze shawl drifting across dark sleeveless ceremonial attire",
+    "weathered slate-blue travel cloak dusted with faint frost, high austere collar",
+    "minimalist pale bone-colored pleated robe with trailing ink-black waist ribbons",
+    "charcoal silk hakama-inspired wide trousers paired with draped off-shoulder linen wrap",
+    "tattered silver-embroidered dark vanguard coat showing worn metallic shoulder trim",
+    "sheer frost-white layered veil robe dissolving gently at hem into drifting mist",
+    "austere ink-black kimono worn loosely with exposed pale collarbone and silver hairpin"
+  ],
+  "actions": [
+    "standing motionless in profile amidst vast empty breathing room, head tilted slightly back as windblown hair streaks across cheek",
+    "extending slender fingertips to catch a single falling crimson maple leaf in still cold air",
+    "turning slowly mid-stride with a quiet over-the-shoulder glance, garment hem dissolving into atmospheric mist",
+    "leaning lightly against a solitary weathered stone pillar in deep shadow, one hand resting near collarbone",
+    "gazing across an expansive misty void while cold breeze lifts loose strands of hair and trailing sash",
+    "kneeling quietly beside shallow dark water, fingertips barely breaking the mirror-like reflection",
+    "pausing barefoot on cold pale stone steps, letting long tattered sleeves billow behind in silver fog",
+    "lifting pale chin slowly toward a solitary diagonal shaft of cold moonlight, eyes half-closed",
+    "walking alone across an endless chalk-white mist plane, silhouette sharply etched by rim light",
+    "holding a single withered crimson branch delicately against dark fabric in silent stillness",
+    "resting forehead gently against a frost-rimmed cedar pillar, quiet breath misting in cold air",
+    "turning three-quarters away into drifting ash and fog, trailing cloak sweeping across stone",
+    "seated motionless on a weathered monolithic stone block amidst vast austere emptiness",
+    "reaching one pale hand gently upward into falling pale snow dust and drifting mist"
+  ],
+  "expressions": [
+    "eyes half-closed with serene melancholic restraint, softly parted lips",
+    "aloof cold eyes gazing into distance, quiet breath in freezing air",
+    "melancholic downward gaze with subtle furrowed brow, tranquil sorrow",
+    "ethereal detached stillness, pale complexion untouched by warmth",
+    "quiet wistful resignation, luminous clear eyes holding faint reflection",
+    "stoic poised calm, slender lips gently pressed together",
+    "hauntingly serene gaze peering through wind-swept strands of hair",
+    "fragile poetic composure, faint sheen of frost on eyelashes",
+    "silent contemplative sorrow, chin tilted softly toward cold light",
+    "cool otherworldly poise, gaze lingering beyond the edge of the frame"
+  ],
+  "nsfw_outfits": [
+    "loosely slipped dark silk robe exposing bare shoulder, back, and side curve, dramatic shadow concealment",
+    "completely nude silhouette emerging from cold mist and charcoal shadow, razor-sharp rim light tracing contour",
+    "sheer frost-white gossamer silk draped loosely across waist, bare torso sculpted by stark chiaroscuro",
+    "partially unfastened obsidian kimono slipping down bare spine, stark contrast against porcelain skin",
+    "translucent wet ash-grey silk wrap clinging softly in cold mist, bare shoulders and collarbone",
+    "tattered dark ceremonial cloak wrapped loosely around bare figure, dramatic light-and-shadow concealment",
+    "minimalist pale linen bandage-style wrap and trailing dark silk sash amidst swirling fog",
+    "bare sculptural back framed by loose wind-swept hair and draped charcoal velvet cloth"
+  ],
+  "nsfw_actions": [
+    "reclining languidly across a dark minimalist stone plinth, arched back, head tilted back into cold light",
+    "graceful three-quarter rear silhouette emerging from swirling mist, bare back traced by cold rim light",
+    "seated barefoot on a cold marble step in stark shadow, dark silk pooling softly around hips",
+    "standing motionless in profile beneath a lone diagonal beam of moonlight, sheer cloth slipping from shoulder",
+    "curled quietly on pale rumpled linen amidst vast negative space, serene melancholic gaze",
+    "kneeling beside a dark reflective water basin, pale silhouette mirrored sharply in still surface",
+    "leaning softly back against a weathered obsidian pillar, head tilted to reveal slender neck line",
+    "turning gracefully away into thick silver fog, bare shoulder blades illuminated by razor-sharp edge light"
+  ],
+  "dual_sfw_actions": [
+    "standing apart across an expansive misty void, reaching fingertips toward each other across empty space",
+    "standing side by side in silent solidarity amidst drifting ash and mist, contrasting dark and pale silhouettes",
+    "walking slowly in opposite directions across a pale misty stone bridge, glancing back simultaneously",
+    "seated back-to-back on weathered shrine steps as crimson maple leaves drift lazily past",
+    "standing quietly together beside a frozen monochrome lakeside, dark cloaks billowing in cold wind",
+    "facing each other across a thin shaft of cold moonlight in an austere shadowed chamber"
+  ],
+  "dual_nsfw_actions": [
+    "intertwined bare silhouettes framed against a vast chalk-white misty void, gentle embrace with stark chiaroscuro",
+    "quiet embrace draped in contrasting ivory and charcoal silk robes amidst swirling cold fog",
+    "resting foreheads together in stark moonlight shadow, bare shoulders traced by silver rim light",
+    "reclining close together on dark minimalist drapery surrounded by serene negative space"
+  ],
+  "scenes": [
+    "expansive chalk-white and cold fog-grey minimalist negative space void with generous atmospheric stillness",
+    "deep charcoal-black austere architectural void pierced by a single diagonal shaft of cold moonlight",
+    "mist-shrouded ancient stone shrine steps with scattered single-point crimson maple leaves",
+    "desolate winter lakeside under pale grey sky, subtle water reflections and drifting snow dust",
+    "solitary weathered monolith standing in an endless shallow mirror-like tidal flat",
+    "abandoned cedar-wood corridor open to swirling mountain fog and sparse withered reeds",
+    "vast overcast moorland veiled in silver mist with a single distant crimson torii silhouette",
+    "minimalist dark basalt stone courtyard dusted with pale ash and fine winter frost",
+    "silent mist-filled birch grove in monochrome winter stillness with soft foggy depth",
+    "austere sunken stone basin reflecting pale overcast sky and drifting autumn leaves"
+  ],
+  "lighting": [
+    "razor-sharp directional rim lighting and stark dramatic chiaroscuro",
+    "cold ambient silver-blue edge light accented by a single vivid crimson chromatic highlight",
+    "dreamlike atmospheric mist diffusion softening distant silhouettes",
+    "solitary diagonal shaft of pale winter moonlight cutting through deep charcoal shadow",
+    "restrained low-saturation overcast glow with crisp tonal separation on pale skin",
+    "ethereal chalk-white backlight turning drifting hair and fabric edges translucent",
+    "icy slate-grey twilight shadow paired with delicate specular sheen on wet stone",
+    "stark gallery-grade monochrome contrast with velvety deep shadows and luminous highlights"
+  ],
+  "_builtin_ver": "V1.49"
+}
