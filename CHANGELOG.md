@@ -1,5 +1,29 @@
 # Changelog / 更新日志
 
+## [V1.50] - 2026-11-24
+
+### 简体中文
+
+**✦ 重点优化与更新内容**
+- **高 DPI 全分辨率适配与窗口交互升级**：新增视口自适应缩放、关键栏位锚定与左侧溢出智能滚动，全面修复 Windows 125%/150%+ 缩放及小屏下的裁切与挤压问题；新增 8 向边角自由缩放、全界面空白区拖拽、退出自动记忆窗口尺寸与位置（多屏防出屏纠偏），以及双击空白区或右键托盘一键恢复默认尺寸。
+- **记忆库审美重构、空间锁与水系硬隔离**：新增室内/室外空间锁与道具兼容校验，严格隔离非水系与水畔/汤泉生态；重构四大世界观剧本与词库权重，明亮通透比例提升至约 **6:4**；推出全新高通透花庭库 **「晴风花庭」** 替代旧库「霓虹机能」；全面清除塑料油光反光词、蜡烛杂物与外貌污染词，并引入滑动防重复队列打通 9 大内置库全量混搭。
+- **16 套自适应电影机位与 51 位角色重构**：镜头语言升级为 16 套姿态/空间自适应电影机位，强化荷叶/白百合/窗纱前景虚化与奶油浅景深；内置 51 位角色全员重构为「纯净外貌 + 独立原版服设」三元组结构，消除歧义与表情冲突，支持多套官服自动轮换、换装保护标志性特征及老存档升级自动补齐官服。
+- **翻译加速、快捷键、音乐单曲循环与多端细节修复**：Youdao 翻译升级为 **320 字符并发分段 + 本地缓存 + 快速超时切换**，长句秒出译文；回退快捷键由 `Alt+Z` 调整为智能 **`Ctrl+Z`**（避开 NVIDIA 浮层冲突且输入框内保留原生文字撤销，桌面与 WebUI 同步）；本地 BGM 新增单曲循环（`🔁 / 🔀 / 🔂 / 🔇`）；修复 WebUI 角色搜索框五语同步、外文弹窗标题拼接及 GitHub Gist 云同步仅上传增量角色过滤。
+- **低误报目录式安装向导（`--onedir`）**：正式安装版 `hsMuse_V1.50_Setup.exe` 切换为 `--onedir` 目录式架构，冷启动更快、显著降低安全软件误报；覆盖升级自动清理旧运行时并 100% 保留个人数据。
+
+---
+
+### English
+
+**✦ Key Improvements & Fixes**
+- **High-DPI Adaptation & Desktop Window Ergonomics**: Added viewport auto-fit scaling, anchored core controls, and smart left-panel auto-scroll to eliminate UI clipping on Windows 125%/150%+ scaling and compact screens. Added 8-direction resizing, blank-area dragging, persistent window size/position memory (with multi-monitor off-screen recovery), and one-click reset via blank-area double-click or tray menu.
+- **Knowledge Base Overhaul, Space Lock & Water Isolation**: Added Indoor/Outdoor Space Lock, prop-compatibility checks, and strict water isolation so non-water themes stay 100% dry. Rebalanced bright-to-moody lighting to **~6:4**, introduced the airy **Sunlit Garden** pack replacing *Neon Techwear*, removed glossy/candle/trait-contaminating tags, and added a thread-safe anti-repeat queue across all 9 built-in packs.
+- **16 Adaptive Cinematic Angles & 51 Character Profiles**: Upgraded to 16 pose- and space-adaptive camera angles with foreground botanical/curtain bokeh and creamy depth of field. Refactored all 51 built-in characters into pure appearance traits + independent canonical outfits with multi-outfit rotation, signature-trait protection during outfit swaps, and automatic outfit backfill for legacy saves.
+- **Faster Translation, Smart Shortcuts, Repeat One & Sync Fixes**: Upgraded Youdao translation with **320-char concurrent chunking, local caching, and fast fallback**; switched Undo Roll from `Alt+Z` to smart **`Ctrl+Z`** (avoiding NVIDIA overlay clash while preserving native text undo in input fields across Desktop & WebUI); added **Repeat One (`🔂`)** to the BGM player; fixed WebUI search placeholder localization, dialog title i18n, and incremental Gist character sync.
+- **Low-False-Positive `--onedir` Installer**: Migrated `hsMuse_V1.50_Setup.exe` to a `--onedir` directory layout for faster cold starts and fewer antivirus false positives, preserving 100% of local data on upgrade.
+
+---
+
 ## [V1.49] - 2026-11-22 (首个正式公开发行版 / First Public Release)
 
 ### 简体中文
