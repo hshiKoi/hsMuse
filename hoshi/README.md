@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="Hoshi02.png" alt="Hoshi (Star)" width="180" />
+<img src="Hoshi05.png" alt="Hoshi (Star)" width="180" />
 
 # ✦ Meet Hoshi ("Star")
 
@@ -32,7 +32,7 @@
 
 | Hoshi 01 | Hoshi 02 | Hoshi 03 |
 | :---: | :---: | :---: |
-| <img src="Hoshi01.png" alt="Hoshi 01" width="220" /> | <img src="Hoshi02.png" alt="Hoshi 02" width="220" /> | <img src="Hoshi03.png" alt="Hoshi 03" width="220" /> |
+| <img src="Hoshi04.png" alt="Hoshi 01" width="220" /> | <img src="Hoshi05.png" alt="Hoshi 02" width="220" /> | <img src="Hoshi06.png" alt="Hoshi 03" width="220" /> |
 
 ---
 
