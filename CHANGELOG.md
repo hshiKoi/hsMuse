@@ -1,4 +1,21 @@
 # Changelog / 更新日志
+## [V1.51] - 2026-11-24
+
+### 简体中文
+
+**✦ 维护修复**
+- **修复更新与意见反馈弹窗底部按钮被裁切**：重构 `ui/dialogs.py` 弹窗布局，将底部操作按钮区、进度条与复选框改为优先锚定（`side="bottom"`）并限制日志/输入框默认行数，彻底解决 Windows 高 DPI 缩放或长更新日志下按钮被挤出窗口外的问题。
+- **修复启动双弹窗重叠**：优化版本检测与公告调度逻辑，当检测到新版本并弹出更新窗时不再叠加弹出公告窗。
+
+---
+
+### English
+
+**✦ Maintenance Fixes**
+- **Fixed Clipped Dialog Buttons under High-DPI**: Refactored Update and Feedback dialogs (`ui/dialogs.py`) to anchor bottom action bars and checkboxes first (`side="bottom"`) with constrained text-box heights, preventing buttons from being pushed off-screen on high-DPI displays or long changelogs.
+- **Prevented Overlapping Startup Popups**: Refined startup update/announcement scheduling so announcements no longer overlap when a new version update dialog is shown.
+
+---
 
 ## [V1.50] - 2026-11-24
 
