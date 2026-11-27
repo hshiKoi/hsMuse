@@ -43,6 +43,41 @@
 >
 > **Major Generational Release V2.2 (V1.51 → V2.2 Complete Overhaul):** Rebuilt from the ground up with a unified modern UI, dual-core offline image tagging, dataset batch captioning, and a native lossless streaming BGM engine. **Immediate upgrade is strongly recommended for all users.** Download **`hsMuse_*_Setup.exe`** first for faster startup, fewer antivirus false positives, and 100% preservation of local data & models on upgrade (`hsMuse_*.exe` is for portable single-file use only).
 
+<a id="preview"></a>
+
+## 🖼️ 界面预览 / Interface Preview
+
+<p align="center">
+  <sub>4 套常驻皮肤 0ms 瞬切 · 支持 12 套随机灵感配色与自定义主题色（点击图片可查看大图）<br/>4 Built-in Skins with Instant Switching · 12 Random Palettes & Custom Theme Colors (Click to zoom)</sub>
+</p>
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/theme_01_night.png" width="100%" alt="暗夜 Night" />
+      <br />
+      <sub><b>暗夜 · Night</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/theme_02_pure.png" width="100%" alt="留白 Pure" />
+      <br />
+      <sub><b>留白 · Pure</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshots/theme_03_sakura.png" width="100%" alt="落樱 Sakura" />
+      <br />
+      <sub><b>落樱 · Sakura</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshots/theme_04_cobalt.png" width="100%" alt="沧澜 Cobalt" />
+      <br />
+      <sub><b>沧澜 · Cobalt</b></sub>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## 🇨🇳 简体中文
