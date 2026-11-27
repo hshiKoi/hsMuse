@@ -1,4 +1,30 @@
 # Changelog / 更新日志
+## [V2.2] - 2026-11-28 (重大跨代重构版 / Major Generational Overhaul)
+
+### 简体中文
+
+**✦ 重大跨代升级与全面重构**
+- **「一核双端」现代画廊界面与 1K~8K 全分辨率适配**：底层彻底重构为现代 WebView 桌面端 + 本地 HTTP WebUI 一体化同源架构，支持严格唯一窗口互斥（浏览器活跃时桌面端自动静音隐藏，右键托盘可一键切回桌面并无感续播）及网页端地址栏锚点同步；全新 4 套常驻皮肤（`暗夜` / `留白` / `落樱` / `沧澜`）0ms 乐观瞬切 + 12 套灵感配色 + 自定义主题色，配备全站物理弹簧滑动胶囊、`暗夜 ↔ 留白` 顶栏羽化昼夜掠影、识图顶栏「双核就绪」发光 LED 胶囊及 `Alt+1~4` 极速切页。
+- **全新主打：双核离线识图反推（零内置模型轻量化架构）**：支持拖入、点选或 `Ctrl+V` 粘贴 PNG / WebP / JPEG 图像，**0ms 秒读**主流生图工具内嵌正负面提示词与采样参数（深度兼容复杂连线拼接节点、归零条件截断与工作流兜底解析）；外置 `models/tagger/` 支持 **本地 ONNX 标签词条反推**（自动嗅探 GPU 加速并零显存兜底 CPU，配备 4 档评级分布、可单击剔除/恢复的条形置信度排行、一键提取角色档案、送入清洗台及 2~5 张参考图提炼共性画风配方）；可选 **自然语言视觉大模型反推**（软件内支持 HuggingFace 官方源 / 国内 HF-Mirror 断点续传一键下载或夸克网盘获取，无独显亦可直连本地推理服务或云端视觉 API，支持 4 种描写风格、5 档篇幅、固定前后缀与标签锚点联合反推，卸载瞬间 **100% 清空显存**）。
+- **全新主打：AI 训练集批量打标 & 数据体检工作台**：支持文件夹递归扫描、独立输出路径、4 种冲突模式（断点续跑跳过 / 覆盖 / 追加 / 前置）、触发词前置、角色 LoRA 外貌词剥离、颜文字豁免下划线转换、括号转义、参数自动记忆与完成后自动卸载模型，同步支持 **标准标签序列 `.txt`** 与 **英文自然语言 `.txt`** 双轨落盘；内置 **全库词频体检**（点击 `🔍` 反查对应图片、一键筛未标图、`Shift` 多选子集改标、图文逐张微调 `Ctrl+S` + 一键双语翻译核对）以及零依赖 **数据体检三件套**（坏图/低清/透明通道体检、透明底一键铺白/浅灰底、两阶段原子配对重命名）。
+- **HTML5 原生流式背景音乐引擎**：彻底移除旧版系统接口与 30MB 体积限制，零后台线程流畅播放 `.mp3 / .wav / .flac / .m4a / .aac / .ogg / .opus` 及大体积无损音轨，支持四态切换（`🔁 / 🔀 / 🔂 / 🔇`）、长按 0.5 秒切歌、损坏自动跳过与双端防重音。
+- **81 位双轨角色库、三大语法方言与数据中心扩容**：内置角色扩充至 **81 位双轨角色**（含原创角色「林听雪」，完整无损继承旧版存档），支持「词条文本 ↔ 权重编排」双向切换、6 套纯净美学基调、3 种通用输出语法方言（`标准标签` / `NovelAI` / `自然语言`）、独立 4 引擎双语对照翻译弹窗（Youdao / MyMemory / Google / 自定义 AI）、200 行批量清洗与权重剥离、对称双栏「云同步与数据中心」（GitHub Private Gist 漫游扩容至 **2,000 角色 / 80 词库 / 2,000 收藏 / 200 配方**）及 **5 国语言** 双端全同步。
+- **无损覆盖升级与外置模型说明**：直接运行 `hsMuse_V2.2_Setup.exe`（`--onedir` 低误报目录架构）覆盖安装即可 **100% 保留原有个人数据、自建角色、词库与外置 `models/` 目录**（`hsMuse_V2.2.exe` 仅作绿色便携备用）；可选视觉模型包可前往 HuggingFace 仓库（`hshiKoi/hsMuse-models`）或国内夸克网盘获取。
+
+---
+
+### English
+
+**✦ Major Generational Overhaul & New Features**
+- **Unified "One-Core, Dual-Client" Gallery UI & 1K–8K Responsive Layout**: Rebuilt from the ground up into a unified WebView desktop + local HTTP WebUI architecture with strict single-window exclusivity (auto-muting and hiding the desktop client while the browser tab is active, with seamless tray-click restoration) and URL hash sync. Added 4 resident themes (*Night* / *Pure* / *Sakura* / *Cobalt*) with 0ms optimistic switching + 12 inspiration palettes + custom accent colors, spring-sliding pill tracks, a Day/Night feathered topbar sweep, a glowing "Dual-Core Ready" LED pill, and `Alt+1–4` instant tab switching.
+- **Flagship Dual-Core Offline Image Tagger (Zero-Bloat External Architecture)**: Drag, select, or `Ctrl+V` PNG / WebP / JPEG images for **0ms full-chain metadata extraction** (supporting SD WebUI, NovelAI, and complex linked ComfyUI node graphs with workflow fallbacks). External `models/tagger/` powers **Local ONNX Tag Extraction** (auto GPU acceleration with zero-VRAM CPU fallback, 4-tier rating bars, clickable confidence filtering, 1-click Character Profile extraction, and multi-image Style Recipe distillation). Optional **Vision LLM Natural Captioning** supports in-app resumable downloads from HuggingFace (`hshiKoi/hsMuse-models`) or zero-VRAM connections to local/cloud OpenAI-compatible Vision APIs, offering 4 styles, 5 length presets, prefix/suffix wrapping, tag-anchor guidance, and **100% VRAM release on unload**.
+- **Flagship AI Dataset Batch Captioning & Audit Workbench**: Supports recursive folder scanning, custom output paths, 4 conflict modes (Skip/Resume, Overwrite, Append, Prepend), trigger word prepending, character-LoRA appearance stripping, kaomoji-safe underscore handling, bracket escaping, persistent preferences, auto-unload on completion, and dual `.txt` export (**Standard Tags** + **English Natural Language**). Includes **Dataset Tag Frequency Audit** (`🔍` reverse image lookup, untagged filter, `Shift` multi-select batch editing, side-by-side image review with `Ctrl+S` + bilingual translation check) and a **Dataset Toolkit** (corrupt/low-res/alpha inspection, 1-click PNG background flattening, and 2-phase atomic pair renaming).
+- **Native HTML5 Lossless Streaming BGM Engine**: Replaced legacy system audio APIs and removed the 30MB file size cap; streams `.mp3 / .wav / .flac / .m4a / .aac / .ogg / .opus` and large lossless tracks with zero background threads, 4-state cycling (`🔁 / 🔀 / 🔂 / 🔇`), hold-0.5s track skipping, corrupt-file auto-skip, and dual-client anti-overlap.
+- **81 Dual-Track Characters, 3 Universal Syntax Dialects & Expanded Data Center**: Expanded built-in presets to **81 dual-track character profiles** (including OC *Lin Tingxue*, preserving all legacy saves) with `Tag Editor ↔ Weight Board` switching, 6 Pure Aesthetic Tones, 3 universal syntax dialects (`Standard Tags` / `NovelAI` / `Natural Language`), a standalone 4-engine bilingual translation popup (Youdao / MyMemory / Google / Custom AI), 200-line batch prompt cleaner & weight stripping, an expanded symmetrical Sync & Data Center (GitHub Private Gist sync up to **2,000 characters / 80 KBs / 2,000 favorites / 200 recipes**), and full 5-language dual-client parity.
+- **Seamless Overwrite Upgrade & External Model Packaging**: Run `hsMuse_V2.2_Setup.exe` (`--onedir` low-false-positive installer) over any existing installation to preserve **100% of your local data, custom characters, knowledge bases, and external `models/`** (`hsMuse_V2.2.exe` is provided for portable single-file use only).
+
+---
+# Changelog / 更新日志
 ## [V1.51] - 2026-11-24
 
 ### 简体中文
