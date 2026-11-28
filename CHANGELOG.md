@@ -1,3 +1,22 @@
+## [V2.3] - 2026-11-28 (五种语言全补齐 & 稳定性升级 / Full 5-Language Parity & Stability Upgrade)
+
+### 简体中文
+**✦ 多语言补齐、引擎加固与架构优化**
+- **五种语言全链路补齐（响应 @KieranW 反馈）**：第一时间响应海外创作者反馈，彻底补齐简体中文 / 繁体中文 / 英文 / 日文 / 韩文在全部二级弹窗（模型扩展包、外置视觉大模型配置、数据体检三件套、批量生成、角色/配方/词库弹窗）、批量打标进度条、抽查标题、音乐播放状态及全站 Toast 提示中的多语言覆盖；非简体中文界面自动隐藏国内专属网盘提示。
+- **本地视觉大模型与批量稳定性提升**：将本地 GGUF 引擎上下文窗口由 `2048` 提升至 `4096`，并在批量自然语言反推中新增单图瞬时异常自动重试机制，显著降低大图叠加锚点批量打标时的失败率。
+- **元数据、续传校验与预处理保护**：优化 WebP EXIF 偏移切片逻辑，修复部分 WebP 原图 UTF-16 提示词漏读问题；为大体积模型断点续传新增实际接收字节完整度校验；训练集配对重命名新增异常自动回滚机制，透明底铺白异常自动清理临时文件；解除单图与批量反推并发时的评级状态竞态。
+- **纯内存前端封装与交互细节打磨**：前端静态资源经词法去注释后封入原生编译加密保险箱纯内存直供，安装目录零明文前端文件落地；锁定按钮行高与最小高度，彻底消除抓取状态切换时的输入框轻微位移。
+- **无损覆盖升级**：直接运行 `hsMuse_V2.3_Setup.exe` 覆盖安装即可 100% 保留原有个人数据、自建角色、词库、音乐与外置 `models/` 目录（`hsMuse_V2.3.exe` 仅作绿色便携备用）。
+
+### English
+**✦ Localization Parity, Core Stability & Hardened Runtime**
+- **Complete 5-Language Parity (Responding to @KieranW's Feedback)**: Promptly resolved all remaining untranslated strings across Model Pack cards, External Vision LLM Setup, the Dataset Audit & Preprocessing Toolkit, Batch Generator, Character/Recipe/KB dialogs, live batch progress bars, review titles, music statuses, and toast notifications across Simplified/Traditional Chinese, English, Japanese, and Korean.
+- **Vision LLM Context & Batch Reliability**: Expanded local GGUF inference server context window from `2048` to `4096` and added automatic single-image retry in batch captioning mode.
+- **Metadata, Download & Dataset Safeguards**: Improved WebP EXIF UTF-16 offset slicing to prevent missed prompts; added byte-length integrity checks for resumable large model downloads; added automatic rollback protection for dataset pair renaming, temp-file cleanup for alpha flattening, and resolved a tagger rating concurrency race condition.
+- **Memory-Sealed Frontend & UI Polish**: Sealed stripped web assets inside the native compiled cryptographic vault for pure in-memory serving (zero plaintext HTML/CSS/JS left on disk); locked button line-height and min-height to eliminate subtle layout shifts during live fetch states.
+- **Seamless Upgrade**: Run `hsMuse_V2.3_Setup.exe` over any existing installation to preserve 100% of your local data, custom presets, music, and external `models/` (`hsMuse_V2.3.exe` is for portable single-file use only).
+
+---
 # Changelog / 更新日志
 ## [V2.2] - 2026-11-28 (重大跨代重构版 / Major Generational Overhaul)
 
@@ -8,7 +27,7 @@
 - **全新主打：双核离线识图反推（零内置模型轻量化架构）**：支持拖入、点选或 `Ctrl+V` 粘贴 PNG / WebP / JPEG 图像，**0ms 秒读**主流生图工具内嵌正负面提示词与采样参数（深度兼容复杂连线拼接节点、归零条件截断与工作流兜底解析）；外置 `models/tagger/` 支持 **本地 ONNX 标签词条反推**（自动嗅探 GPU 加速并零显存兜底 CPU，配备 4 档评级分布、可单击剔除/恢复的条形置信度排行、一键提取角色档案、送入清洗台及 2~5 张参考图提炼共性画风配方）；可选 **自然语言视觉大模型反推**（软件内支持 HuggingFace 官方源 / 国内 HF-Mirror 断点续传一键下载或夸克网盘获取，无独显亦可直连本地推理服务或云端视觉 API，支持 4 种描写风格、5 档篇幅、固定前后缀与标签锚点联合反推，卸载瞬间 **100% 清空显存**）。
 - **全新主打：AI 训练集批量打标 & 数据体检工作台**：支持文件夹递归扫描、独立输出路径、4 种冲突模式（断点续跑跳过 / 覆盖 / 追加 / 前置）、触发词前置、角色 LoRA 外貌词剥离、颜文字豁免下划线转换、括号转义、参数自动记忆与完成后自动卸载模型，同步支持 **标准标签序列 `.txt`** 与 **英文自然语言 `.txt`** 双轨落盘；内置 **全库词频体检**（点击 `🔍` 反查对应图片、一键筛未标图、`Shift` 多选子集改标、图文逐张微调 `Ctrl+S` + 一键双语翻译核对）以及零依赖 **数据体检三件套**（坏图/低清/透明通道体检、透明底一键铺白/浅灰底、两阶段原子配对重命名）。
 - **HTML5 原生流式背景音乐引擎**：彻底移除旧版系统接口与 30MB 体积限制，零后台线程流畅播放 `.mp3 / .wav / .flac / .m4a / .aac / .ogg / .opus` 及大体积无损音轨，支持四态切换（`🔁 / 🔀 / 🔂 / 🔇`）、长按 0.5 秒切歌、损坏自动跳过与双端防重音。
-- **81 位双轨角色库、三大语法方言与数据中心扩容**：内置角色扩充至 **81 位双轨角色**（含原创角色「林听雪」，完整无损继承旧版存档），支持「词条文本 ↔ 权重编排」双向切换、6 套纯净美学基调、3 种通用输出语法方言（`标准标签` / `NovelAI` / `自然语言`）、独立 4 引擎双语对照翻译弹窗（Youdao / MyMemory / Google / 自定义 AI）、200 行批量清洗与权重剥离、对称双栏「云同步与数据中心」（GitHub Private Gist 漫游扩容至 **2,000 角色 / 80 词库 / 2,000 收藏 / 200 配方**）及 **5 国语言** 双端全同步。
+- **81 位双轨角色库、三大语法方言与数据中心扩容**：内置角色扩充至 **81 位双轨角色**（含原创角色「林听雪」，完整无损继承旧版存档），支持「词条文本 ↔ 权重编排」双向切换、6 套纯净美学基调、3 种通用输出语法方言（`标准标签` / `NovelAI` / `自然语言`）、独立 4 引擎双语对照翻译弹窗（Youdao / MyMemory / Google / 自定义 AI）、200 行批量清洗与权重剥离、对称双栏「云同步与数据中心」（GitHub Private Gist 漫游扩容至 **2,000 角色 / 80 词库 / 2,000 收藏 / 200 配方**）及 **5 种界面语言** 双端全同步。
 - **无损覆盖升级与外置模型说明**：直接运行 `hsMuse_V2.2_Setup.exe`（`--onedir` 低误报目录架构）覆盖安装即可 **100% 保留原有个人数据、自建角色、词库与外置 `models/` 目录**（`hsMuse_V2.2.exe` 仅作绿色便携备用）；可选视觉模型包可前往 HuggingFace 仓库（`hshiKoi/hsMuse-models`）或国内夸克网盘获取。
 
 ---
@@ -24,7 +43,7 @@
 - **Seamless Overwrite Upgrade & External Model Packaging**: Run `hsMuse_V2.2_Setup.exe` (`--onedir` low-false-positive installer) over any existing installation to preserve **100% of your local data, custom characters, knowledge bases, and external `models/`** (`hsMuse_V2.2.exe` is provided for portable single-file use only).
 
 ---
-# Changelog / 更新日志
+
 ## [V1.51] - 2026-11-24
 
 ### 简体中文
@@ -76,7 +95,7 @@
 - **可自定义模块化美学词库 / 记忆库（最高支持 40 套 · 单栏 500 词条）**：采用便携独立的 JSON 架构，首发内置 9 套高密度美学词库 + 动态【灵感潮汐】池；支持 10 格可视化编辑、自定义排序、AI 一键造库导入及文件拖拽共享，所有自建词库均自动参与全库智能混搭，打造越用越懂你的专属离线提示词记忆库。
 - **四大世界观隔离引擎（Era Lock）与双格式批量生成**：严格隔离「现代时尚 / 东方仙侠 / 物哀哥特 / 自然水畔汤泉」四大生态，原子级绑定人物、穿搭、动作、神态、场景与光影，一键同步输出「8 级规范排序 Tag」与「电影级自然语言长句」；支持 `{A|B}` 随机通配符，单次最高支持 100 条批量去重生成与导出。
 - **多源并发灵感直采 & 批量清洗工作台**：支持按 SFW / 纯欲 / R18 分级多线程并发抓取高分创意，关闭自动收录角色时依然完整保留外貌词并持续反哺本地灵感池；清洗工作台支持单次最高 200 行批量处理，按需剥离 LoRA、权重括号、废词、人物外貌或基础服装（精准保留景别与神态词），一键转安全预览 / NSFW 并合成流畅自然语言。
-- **桌面端 + 本地 WebUI 实时同步 & 全套周边生态**：推荐优先点击顶栏【网页版】体验更流畅的大屏排版与实时词数统计；内置 1K~8K DPI 自适应、5 国语言（简/繁/英/日/韩）、4 款极简高定皮肤 + 12 套灵感色卡、四引擎翻译（Youdao / MyMemory / Google / 自定义 AI 大模型）、GitHub Private Gist 私有云跨机同步、本地离线备份/恢复、轻量本地 BGM 播放器，以及完整保留个人数据的软件内一键在线更新。
+- **桌面端 + 本地 WebUI 实时同步 & 全套周边生态**：推荐优先点击顶栏【网页版】体验更流畅的大屏排版与实时词数统计；内置 1K~8K DPI 自适应、5 种界面语言（简/繁/英/日/韩）、4 款极简高定皮肤 + 12 套灵感色卡、四引擎翻译（Youdao / MyMemory / Google / 自定义 AI 大模型）、GitHub Private Gist 私有云跨机同步、本地离线备份/恢复、轻量本地 BGM 播放器，以及完整保留个人数据的软件内一键在线更新。
 
 ---
 
