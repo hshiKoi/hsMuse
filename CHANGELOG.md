@@ -1,19 +1,23 @@
-## [V2.3] - 2026-11-28 (五种语言全补齐 & 稳定性升级 / Full 5-Language Parity & Stability Upgrade)
+## [V2.3] - 2026-11-28 (五种语言全补齐 · 体验闭环 & 稳定性升级 / Full 5-Language Parity, Workflow Polish & Stability)
 
 ### 简体中文
-**✦ 多语言补齐、引擎加固与架构优化**
-- **五种语言全链路补齐（响应 @KieranW 反馈）**：第一时间响应海外创作者反馈，彻底补齐简体中文 / 繁体中文 / 英文 / 日文 / 韩文在全部二级弹窗（模型扩展包、外置视觉大模型配置、数据体检三件套、批量生成、角色/配方/词库弹窗）、批量打标进度条、抽查标题、音乐播放状态及全站 Toast 提示中的多语言覆盖；非简体中文界面自动隐藏国内专属网盘提示。
-- **本地视觉大模型与批量稳定性提升**：将本地 GGUF 引擎上下文窗口由 `2048` 提升至 `4096`，并在批量自然语言反推中新增单图瞬时异常自动重试机制，显著降低大图叠加锚点批量打标时的失败率。
-- **元数据、续传校验与预处理保护**：优化 WebP EXIF 偏移切片逻辑，修复部分 WebP 原图 UTF-16 提示词漏读问题；为大体积模型断点续传新增实际接收字节完整度校验；训练集配对重命名新增异常自动回滚机制，透明底铺白异常自动清理临时文件；解除单图与批量反推并发时的评级状态竞态。
-- **纯内存前端封装与交互细节打磨**：前端静态资源经词法去注释后封入原生编译加密保险箱纯内存直供，安装目录零明文前端文件落地；锁定按钮行高与最小高度，彻底消除抓取状态切换时的输入框轻微位移。
+**✦ 多语言补齐、交互闭环与引擎稳定性升级**
+- **五种语言全链路补齐（响应社区反馈）**：第一时间响应非简体中文界面反馈，全面补齐简体中文 / 繁体中文 / 英文 / 日文 / 韩文在全部二级弹窗（模型扩展包、外置视觉大模型配置、数据体检三件套、批量生成、角色/配方/词库弹窗）、批量打标进度条、抽查标题、音乐状态与全站 Toast 中的多语言覆盖；修复英文模式下 `Outfits 1` 多余量词问题，非简体中文界面自动隐藏区域限定网盘提示。
+- **「释放显存」直观交互升级**：将识图顶栏与批量设置中的模型清理选项统一优化为 **「释放显存 / 完成后释放显存」**，消除误解并精简多余悬停提示，一键即清内存与显存占用。
+- **画风配方完整闭环**：已保存配方卡片新增绑定的「视觉基底 / 美学基调」徽章，支持原地 **编辑** 与 **+ 新建配方**；多图提炼画风完成后直通配方保存窗口，内置配方同步五种语言。
+- **角色自定义分类 & 防误删二次确认**：编辑或新建角色时支持直接创建自定义分类，主界面与角色库自动收录并随存档同步，且重启不再重置已修改分类的内置角色；为清空收藏夹、删除角色、删除知识库三项高危操作统一接入二次确认弹窗。
+- **本地视觉大模型与数据集稳定性加固**：将本地 GGUF 视觉引擎上下文窗口由 `2048` 提升至 `4096`，并在批量自然语言反推中新增单图瞬时异常自动重试机制；修复部分 WebP 原图 EXIF 偏移导致的元数据漏读；大体积模型断点续传新增字节完整度校验；数据集配对重命名新增异常自动回滚保护与透明底铺白临时文件清理。
+- **高分屏排版与界面细节优化**：双轨角色表列宽与工具栏升级为弹性排版，修复最大化窗口下分类胶囊折行问题；锁定按钮行高，消除抓取状态切换时的界面轻微位移；进一步精简安装目录结构。
 - **无损覆盖升级**：直接运行 `hsMuse_V2.3_Setup.exe` 覆盖安装即可 100% 保留原有个人数据、自建角色、词库、音乐与外置 `models/` 目录（`hsMuse_V2.3.exe` 仅作绿色便携备用）。
 
 ### English
-**✦ Localization Parity, Core Stability & Hardened Runtime**
-- **Complete 5-Language Parity (Responding to @KieranW's Feedback)**: Promptly resolved all remaining untranslated strings across Model Pack cards, External Vision LLM Setup, the Dataset Audit & Preprocessing Toolkit, Batch Generator, Character/Recipe/KB dialogs, live batch progress bars, review titles, music statuses, and toast notifications across Simplified/Traditional Chinese, English, Japanese, and Korean.
-- **Vision LLM Context & Batch Reliability**: Expanded local GGUF inference server context window from `2048` to `4096` and added automatic single-image retry in batch captioning mode.
-- **Metadata, Download & Dataset Safeguards**: Improved WebP EXIF UTF-16 offset slicing to prevent missed prompts; added byte-length integrity checks for resumable large model downloads; added automatic rollback protection for dataset pair renaming, temp-file cleanup for alpha flattening, and resolved a tagger rating concurrency race condition.
-- **Memory-Sealed Frontend & UI Polish**: Sealed stripped web assets inside the native compiled cryptographic vault for pure in-memory serving (zero plaintext HTML/CSS/JS left on disk); locked button line-height and min-height to eliminate subtle layout shifts during live fetch states.
+**✦ Full 5-Language Parity, Workflow Polish & Stability Upgrades**
+- **Complete 5-Language Parity (Community Feedback)**: Promptly resolved remaining untranslated strings across Model Pack cards, External Vision LLM Setup, Dataset Audit Toolkit, Batch Generator, Character/Recipe/KB dialogs, live batch progress bars, review headers, music statuses, and toast notifications across Simplified/Traditional Chinese, English, Japanese, and Korean; fixed a stray Chinese unit character next to `Outfits` in English mode.
+- **Clearer VRAM Control**: Renamed memory-clearing controls to **Free VRAM / Auto-Free VRAM** and removed redundant tooltips for instant, unambiguous RAM/VRAM release.
+- **Complete Style Recipe Workflow**: Recipe cards now display bound Art Style & Aesthetic Tone badges and support in-place **Edit** and **+ New Recipe**; multi-image style extraction now opens the recipe save dialog directly, and built-in recipes are localized across all 5 languages.
+- **Custom Character Categories & Delete Safeguards**: Added custom category creation directly inside the Character Editor (persisted across restarts and backups without resetting modified built-in character categories); added confirmation dialogs for clearing favorites, deleting characters, and deleting knowledge bases.
+- **Vision LLM & Dataset Reliability**: Expanded local GGUF server context window from `2048` to `4096` with automatic single-image retry in batch captioning; fixed WebP EXIF UTF-16 offset decoding; added byte-length integrity checks for resumable large model downloads; added automatic rollback protection for dataset pair renaming and temp cleanup for alpha flattening.
+- **High-DPI Layout & UI Polish**: Converted Character Table columns and toolbar inputs to responsive units to prevent badge wrapping when maximized; locked button heights to eliminate subtle layout shifts during live fetch; streamlined installation directory structure.
 - **Seamless Upgrade**: Run `hsMuse_V2.3_Setup.exe` over any existing installation to preserve 100% of your local data, custom presets, music, and external `models/` (`hsMuse_V2.3.exe` is for portable single-file use only).
 
 ---
